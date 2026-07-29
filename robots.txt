@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hairstyle-preview-repeatability-lab.onrender.com/sitemap.xml
+Sitemap: https://wpw4j6.csb.app/sitemap.xml
