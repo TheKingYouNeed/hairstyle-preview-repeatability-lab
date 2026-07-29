@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hairstyle Preview Repeatability Lab</title>
+  <meta name="description" content="A four-frame sampling protocol for separating repeatable hairstyle-preview signals from lighting, angle, styling, and camera effects.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://hairstyle-preview-repeatability-lab.onrender.com/">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/">Repeatability Lab</a>
+      <a href="#worksheet">Open the worksheet</a>
+    </nav>
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Virtual hairstyle planning method</p>
+        <h1>Test a hairstyle reference across four controlled frames</h1>
+        <p class="lede">A convincing preview is useful, but a repeatable preview is more informative. This field guide helps you separate stable style signals from lighting, angle, camera, and temporary styling effects before a salon conversation.</p>
+        <a class="button" href="#protocol">Start the protocol</a>
+      </div>
+      <aside class="hero-card" aria-label="Core principle">
+        <span class="step-number">01</span>
+        <h2>Change one variable at a time</h2>
+        <p>Keep distance, expression, crop, and styling as steady as practical. When several inputs change together, you cannot tell which one changed the result.</p>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="protocol">
+      <div>
+        <p class="eyebrow">Why repeatability matters</p>
+        <h2>A preview is a reference, not a prediction</h2>
+      </div>
+      <div class="prose">
+        <p>A virtual hairstyle image can help name preferences: a softer perimeter, more height at the crown, less width near the jaw, a different fringe direction, or a warmer color impression. It cannot establish how hair will behave after cutting, coloring, washing, humidity, sleep, or ordinary movement.</p>
+        <p>The useful question is therefore not “Will I look exactly like this?” It is “Which visual ideas stay recognizable when the viewing conditions change?” The four-frame protocol below creates a small evidence set instead of relying on one flattering image.</p>
+      </div>
+    </section>
+
+    <section class="frames" aria-labelledby="frames-title">
+      <div class="section-heading">
+        <p class="eyebrow">The four-frame set</p>
+        <h2 id="frames-title">Collect comparable evidence</h2>
+      </div>
+      <div class="card-grid">
+        <article>
+          <span>Frame A</span>
+          <h3>Neutral front view</h3>
+          <p>Use even daylight or soft indoor light. Face the camera without a strong head tilt. Record the apparent outline, face framing, part, and overall length.</p>
+        </article>
+        <article>
+          <span>Frame B</span>
+          <h3>Three-quarter view</h3>
+          <p>Turn only enough to reveal side volume and how the style sits behind the cheek. Keep lighting and camera distance close to Frame A.</p>
+        </article>
+        <article>
+          <span>Frame C</span>
+          <h3>Texture reality check</h3>
+          <p>Use a photo that represents your normal texture and density rather than a rare styled day. Note where the reference depends on smoothing, setting, or added lift.</p>
+        </article>
+        <article>
+          <span>Frame D</span>
+          <h3>Routine-condition view</h3>
+          <p>Repeat the comparison under the light and styling conditions you encounter most often. This frame tests whether the idea still reads outside the ideal setup.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="signal-section">
+      <div class="section-heading">
+        <p class="eyebrow">Read the result</p>
+        <h2>Track signals, not compliments</h2>
+      </div>
+      <div class="signal-grid">
+        <article class="signal stable">
+          <p class="label">Stable signal</p>
+          <h3>It survives the frame change</h3>
+          <p>The silhouette, face-framing direction, or broad length impression remains recognizable. Carry this idea into the consultation as a preference, while still asking how it translates to your hair.</p>
+        </article>
+        <article class="signal variable">
+          <p class="label">Variable signal</p>
+          <h3>It depends on presentation</h3>
+          <p>The effect changes with angle, light, texture, or temporary styling. Ask what technique and daily effort would be needed to recreate the part you like.</p>
+        </article>
+        <article class="signal unknown">
+          <p class="label">Unknown signal</p>
+          <h3>The evidence is insufficient</h3>
+          <p>The frames are too different, obscured, or inconsistent to compare. Gather a closer reference instead of treating uncertainty as a negative result.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="worksheet" id="worksheet">
+      <div class="worksheet-copy">
+        <p class="eyebrow">Interactive worksheet</p>
+        <h2>Build a consultation-ready note</h2>
+        <p>Mark each observation that stayed reasonably consistent across your frames. This is not a scientific score or a guarantee; it is a prompt for a clearer discussion.</p>
+        <div class="checklist">
+          <label><input type="checkbox" data-signal="Silhouette"> The overall silhouette stayed recognizable</label>
+          <label><input type="checkbox" data-signal="Face framing"> The face-framing direction stayed recognizable</label>
+          <label><input type="checkbox" data-signal="Part or fringe"> The part or fringe direction stayed recognizable</label>
+          <label><input type="checkbox" data-signal="Volume placement"> The main volume placement stayed recognizable</label>
+          <label><input type="checkbox" data-signal="Color direction"> The broad color direction stayed recognizable</label>
+        </div>
+      </div>
+      <aside class="result" aria-live="polite">
+        <p class="label">Your evidence note</p>
+        <p class="score"><span id="score">0</span> / 5 signals</p>
+        <p id="interpretation">No observations selected yet. Compare the four frames before writing a conclusion.</p>
+        <p class="prompt" id="prompt">Consultation prompt: “Which parts of this reference are realistic for my density, texture, growth pattern, history, and routine?”</p>
+      </aside>
+    </section>
+
+    <section class="translation">
+      <div class="section-heading">
+        <p class="eyebrow">Translate the evidence</p>
+        <h2>Turn the image into useful salon language</h2>
+      </div>
+      <div class="translation-grid">
+        <article>
+          <h3>Describe what you want to preserve</h3>
+          <p>Instead of requesting “this exact haircut,” point to the stable ideas: “I like that the perimeter looks soft,” “I want less width here,” or “I prefer the face framing to begin below this point.”</p>
+        </article>
+        <article>
+          <h3>Name what you will not maintain</h3>
+          <p>State limits plainly: daily heat, round-brush work, frequent toning, short color appointments, or a fringe that requires constant resetting. A useful plan respects the ordinary week.</p>
+        </article>
+        <article>
+          <h3>Ask for translation, not imitation</h3>
+          <p>Ask how the reference should change for your density, curl pattern, growth direction, current layers, chemical history, and realistic appointment schedule.</p>
+        </article>
+        <article>
+          <h3>Keep a fallback</h3>
+          <p>Identify the lowest-commitment way to test the idea: styling direction, temporary color, a longer first cut, or one face-framing adjustment. Reversibility is useful information.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="mistakes">
+      <div>
+        <p class="eyebrow">Common interpretation errors</p>
+        <h2>What this protocol is designed to prevent</h2>
+      </div>
+      <ol>
+        <li><strong>Lighting substitution:</strong> reading a brighter or warmer image as proof that the haircut or color itself is better.</li>
+        <li><strong>Angle substitution:</strong> comparing a straight-on reference with a tilted or three-quarter result and attributing all differences to the style.</li>
+        <li><strong>Finish substitution:</strong> treating a polished blowout as evidence of how the cut will sit with a normal routine.</li>
+        <li><strong>Feature substitution:</strong> judging the complete image when the actual preference concerns one feature such as perimeter weight or fringe direction.</li>
+        <li><strong>Certainty inflation:</strong> converting a useful visual reference into a promise about a real service outcome.</li>
+      </ol>
+    </section>
+
+    <section class="app-note">
+      <div>
+        <p class="eyebrow">Optional reference tool</p>
+        <h2>Create controlled candidates before you compare</h2>
+        <p>The owner-published <strong>Hairstyle App: Hair Try On</strong> can be used to explore hairstyle and color references for this protocol. Keep the same base photo when comparing candidates, and treat every result as a planning aid.</p>
+      </div>
+      <a class="button dark" href="https://play.google.com/store/apps/details?id=app.hair.style">View the official Android listing</a>
+    </section>
+
+    <section class="disclosure">
+      <h2>Ownership and limitations disclosure</h2>
+      <p>This independent educational resource is published by the owner of Hairstyle App: Hair Try On. It is not affiliated with or endorsed by Google, Google Play, salons, stylists, hair-care brands, or certification bodies. The app and this worksheet provide planning references, not professional advice or guaranteed outcomes. Real results vary with hair properties, growth patterns, prior services, technique, products, styling, environment, camera processing, and maintenance.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Hairstyle Preview Repeatability Lab · An owner-disclosed planning resource</p>
+  </footer>
+  <script src="/app.js"></script>
+</body>
+</html>
